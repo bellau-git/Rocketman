@@ -4,31 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Rowdies:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./main.css">
     <title>Rocketmen</title>
 </head>
 <body>
-    <container class="loading">
-        <h1 class="greeting">Welcome Rocketmen!</h1>
-        <button class="start">Start Questionaire</button>
-        <button class="submit-btn">See Submitted Applications</button> 
-    </container>
-    <container class="personal-info">
-        <div class="pers-info-left">
-            <h1>Hey, Rocketman, who are you?</h1>
-            <form action="">
-                <input type="text" name="" id="" placeholder="First Name">
-                <input type="text" name="" id="" placeholder="Last Name">
-                <input type="text" name="" id="" placeholder="E Mail">
-                <input type="text" name="" id="" placeholder="+ 995 5_ _ _ _">
-            </form>
-            <div class="next-page">
-                <span>&#9711;</span>
-                <button id=""netx>Next</button>
+    <container class="main-container">
+        <div class="backgr-img">
+             <div class="main-cont-div">
+                <h1 class="greeting">Welcome Rocketeer !</h1>
+                <div class="greeting-btns">
+                    <button class="start-btn">Start Questionaire</button>
+                    <button class="submit-btn">See Submitted Applications</button> 
+                </div>
+            </div>
+            <div class="astro">
+                <img src="./astronaut.png" alt="">
             </div>
         </div>
-        <div class="pers-info-right">
-            <h1>Redberry Origins</h1>
+       
+    </container>
+
+    <container class="input-info">
+        <div class="input-info-left">
+            <h1 class="input-title">Hey, Rocketman, who are you?</h1>
+            <form action="">
+                <input type="text" name="" id="firstname" placeholder="First Name">
+                <input type="text" name="" id="lastname" placeholder="Last Name">
+                <input type="text" name="" id="email" placeholder="E Mail">
+                <input type="text" name="" id="mobile" placeholder="+ 995 5_ _ _ _">
+            </form>
+            <div class="next-page">
+                <button id="next" class="next-btn">Next</button>
+            </div>
+        </div>
+        <div class="input-info-right">
+            <h1 class="p-title">Redberry Origins</h1>
             <p>Redberry as a company name came into life while playing “What? Where? When?” 
                 There was a question of which the answer was a famous American author and 
                 screenwriter Ray Bradbury, but our CEO Gaga Darsalia forgot the exact name 
@@ -36,9 +49,10 @@
                 to be born Company later known as Redberry 😇</p>
         </div>
     </container>
-    <container class="tech-skill">
-        <div class="tech-skill-left">
-            <h1>Tell us about your skills</h1>
+
+    <container class="input-info">
+        <div class="input-info-left">
+            <h1 class="input-title">Tell us about your skills</h1>
             <form action="">
                 <select name="skills" id="skills" class="skills">
                     <option value=" ">Skills</option>
@@ -49,21 +63,23 @@
                     <option value="javascript">Javascript</option>
                 </select>
                 <input type="text" name="" id="" placeholder="Experience Duration in Years">
-                <button class="expr-btn">Experience Duration in Years</button>
+                <button id="add-btn" class="add-btn">Add Programing Language</button>
             </form>
-            <div class="tech-skill-right">
-                <h1>What are we capable of</h1>
-                <p>As we have told you Redberry has been on the fileds for quite a time already, 
+            
+        </div>  
+        <div class="input-info-right">
+            <h1 class="p-title">What are we capable of</h1>
+            <p>As we have told you Redberry has been on the fileds for quite a time already, 
                     and we have touched and embraced variety of programming languages, thechnologies, 
                     philosophies and methods. We are battle-scared with PHP Laravel Stack with Vue.js, 
                     Get the hang of React along the way, embraced Serverside technologies such as Docker 
                     and Kubernetes, and now we are leading company in Georgia in web3 industry.</p>
-            </div>
         </div>
     </container>
-    <container class="covid">
-        <div class="covid-left">
-            <h1>Covid Situations</h1>
+
+    <container class="input-info">
+        <div class="input-info-left">
+            <h1 class="input-title">Covid Situations</h1>
             <form action="">
                 <div>
                     <label for="">How would you prefer to work?</label>
@@ -90,20 +106,16 @@
                     <label for="">When did you get covid vaccine?</label>
                     <span>Date</span>
                     <input type="date">
+                    <button></button>
                 </div>
-                
-                
             </form>
-            <div>
+            <div class="next-page">
                 <button id="previous">Previous</button>
-                <span>&#9711;</span>
-                <span>&#9711;</span>
-                <span>&#9711;</span>
                 <button id="next">Next</button>
             </div>
         </div>
-        <div class="covid-right">
-            <h1>Redberry Covid Politics</h1>
+        <div class="input-info-right">
+            <h1 class="p-title">Redberry Covid Politics</h1>
             <p>As this infamous pandemic took place in the world, we have adjasted 
                 our working practices accordingly so that our employees be as much 
                 comfortable as possible. We have hybrid working environment, meaning 
@@ -112,9 +124,57 @@
                 face communications are much more fun and productive than zoom meetings. </p>
         </div>
     </container>
-    <container class="rdbr-insights"></container>
-    <container class="submit"></container> 
-    <container class="thanks"></container>
+
+    <container class="input-info">
+        <div class="input-info-left">
+            <h1 class="input-title">What about you?</h1>
+            <form action="">
+                <div>
+                    <label for="">Would you attend Devtalks and maybe also organize your own?</label>
+                    <input type="radio" name="yes" value="yes">Yes 
+                    <input type="radio" name="no" value="no">No
+                </div>
+                <div>
+                    <label for="">What would you speak about at Devtalk?</label>
+                    <textarea name="aboutYou" id="about-you" cols="30" rows="10">I would...</textarea>
+                </div>
+                <div>
+                    <label for="">Tell us somthing special</label>
+                    <textarea name="smthSpecial" id="smth-special" cols="30" rows="10">I...</textarea>
+                </div>
+                <div class="next-page">
+                    <button id="previous">Previous</button>
+                    <button id="next">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="input-info-right">
+            <h1 class="p-title">Redberrian Insights</h1>
+            <p>We were soo much fun before the pandemic started, with almost every weekend parties and each 
+                employee birthday celebrations. But covid situation got the best of us. But yet we are trying 
+                to take and give as much fun as possibly. For example in every 2 weeks we are attending Devtalks 
+                in which our senior and lead developers talks about interesting stuff, for example Web3, NFT, 
+                what’s new in Laravel 9 and so on. This kind of devtalks are attended in Office but also broadcasted 
+                 through Zoom meetings. So you are feel free to join in any way possible. Join Us!</p>
+        </div>
+    </container>
+
+    <container class="main-container">
+        <div class="main-cont-div">
+            <button id="last-submit" class="last-submit-btn">Sutmit</button>
+            <button id="go-back" class="go-back-btn">go back</button>
+        </div>
+    </container>
+
+    <container class="main-container">
+        <div class="main-cont-div">
+            <h1 class="thanks-title">Thanks for Joining 😊 </h1>
+        </div>
+    </container>
+
+    <container class="subm-item">
+        <h1>Submitted Applications</h1>
+    </container>
      
     <script src="./app.js"></script>
 

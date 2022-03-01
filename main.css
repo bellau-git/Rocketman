@@ -1,0 +1,142 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+container {
+    height: 1080px;
+    overflow: auto;
+    text-align: center;
+}
+button {
+    cursor: pointer;
+    box-shadow: none;
+}
+textarea {
+    resize: none;
+  }
+.main-container {
+    width: 100%;
+    display: block;
+    background-color: black;
+}
+.backgr-img {
+    background: url(stars.png);
+}
+img {
+    width: 450px;
+    height: 400px;
+    transform: rotate(-32.28deg);
+}
+.main-cont-div {
+    padding-top: 115px;
+}
+.input-info {
+    display: flex;
+    justify-content: space-around;
+}
+.input-info-left, .input-info-right {
+    display: none;
+    padding-left: 180px;
+    padding-top: 100px;
+    width: 50%;
+}
+.input-info-right {
+    background-color: black;
+}
+.greeting {
+    height: 212px;
+    color: #FE3B1F;
+
+    font-family: Rowdies;
+    font-size: 96px;
+    line-height: 119px;
+}
+.start-btn, .last-submit-btn{
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 29px;
+    background: #FE3B1F;
+    border-radius: 50px;
+    color:white;
+    border-style: none;
+
+    width: 395px;
+    height: 79px;
+}
+.submit-btn, .go-back-btn{
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: underline;
+    background: none;
+    border-style: none;
+    color: #FFFFFF;
+}
+button:hover {
+    transition: 0.7s;
+}
+p {
+    width: 705px;
+    height: 606px;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+.p-title {
+    color: #FE3B1F;
+    font-family: Rowdies;
+    height: 94px;
+    font-size: 64px;
+    line-height: 79px;
+    text-align: left;
+    width: 700px auto;
+}
+.input-title {
+    color: #FE3B1F;
+    font-family: Rowdies;
+    font-size: 64px;
+    line-height: 79px;
+    width: 700px;
+}
+
+
+form > input, select {
+    display: inline-grid;
+    width: 455px;
+    height: 54px;
+    font-style: italic;
+    font-size: 14px;
+    background: #FFFFFF;
+    border: 1px solid #525557;
+    margin-top: 37px;
+    
+    padding-left: 50px;
+}
+
+select {
+    width: 508px;
+}
+.add-btn {
+    font-family: Montserrat;
+    background-color: #FE3B1F;
+    color: #FFFFFF;
+    width: 195px;
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+.thanks-title {
+    color: #FE3B1F;
+    font-family: Rowdies;
+    font-size: 96px;
+}
