@@ -1,46 +1,63 @@
 body {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 container {
+    width: 1920px;
     height: 1080px;
-    overflow: auto;
-    text-align: center;
 }
 button {
     cursor: pointer;
     box-shadow: none;
 }
 textarea {
+    width: 535px;
+    height: 90px;
     resize: none;
   }
 .main-container {
-    width: 100%;
     display: block;
     background-color: black;
 }
 .backgr-img {
     background: url(stars.png);
+    background-size: contain;
+    text-align: center;
 }
 img {
+    padding-top: 50px;
     width: 450px;
     height: 400px;
     transform: rotate(-32.28deg);
 }
 .main-cont-div {
     padding-top: 115px;
+    text-align: center;
+}
+.greeting-btns {
+    width: 450px;
 }
 .input-info {
     display: flex;
     justify-content: space-around;
 }
+.input-form input, .skills, .date {
+    width: 455px;
+    height: 50px;
+    margin-top: 20px;
+}
 .input-info-left, .input-info-right {
-    display: none;
-    padding-left: 180px;
-    padding-top: 100px;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+.skills {
+    width: 510px;
+}
+.form {
+    text-align: center;
 }
 .input-info-right {
     background-color: black;
@@ -48,6 +65,7 @@ img {
 .greeting {
     height: 212px;
     color: #FE3B1F;
+    text-align: center;
 
     font-family: Rowdies;
     font-size: 96px;
@@ -69,22 +87,20 @@ img {
     font-family: Montserrat;
     font-size: 24px;
     line-height: 29px;
+    padding-top: 50px;
     text-decoration-line: underline;
     background: none;
     border-style: none;
     color: #FFFFFF;
+
 }
 button:hover {
     transition: 0.7s;
 }
-p {
-    width: 705px;
-    height: 606px;
-    font-size: 24px;
-    color: #FFFFFF;
-    line-height: 200%;
-    letter-spacing: 0.05em;
+
+.info-right {
     text-align: left;
+    padding-left: 160px;
 }
 .p-title {
     color: #FE3B1F;
@@ -92,8 +108,14 @@ p {
     height: 94px;
     font-size: 64px;
     line-height: 79px;
-    text-align: left;
-    width: 700px auto;
+}
+.p-text {
+    color: #FFFFFF;
+    width: 705px;
+    height: 606px;
+    font-size: 24px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
 }
 .input-title {
     color: #FE3B1F;
@@ -101,20 +123,25 @@ p {
     font-size: 64px;
     line-height: 79px;
     width: 700px;
+    padding-left: 160px;
+    text-align: center;
 }
-
-
-form > input, select {
-    display: inline-grid;
-    width: 455px;
-    height: 54px;
+.info > input {
+    width: 454px;
+    height: 55px;
+    margin-top: 30px;
+}
+input, select {
     font-style: italic;
     font-size: 14px;
     background: #FFFFFF;
     border: 1px solid #525557;
-    margin-top: 37px;
-    
     padding-left: 50px;
+}
+select {
+    width: 455px;
+    margin-top: 37px;
+    line-height: 50px;
 }
 
 select {
@@ -129,14 +156,38 @@ select {
     font-size: 12px;
     text-align: center;
     margin-top: 20px;
+    border-style: none;
+}
+.covid-info {
+    display: flex;
+    flex-direction: column;padding-left: 160px;
 }
 
-
-
+.covid-info > label{
+    height: 52px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.covid-info > div {
+    line-height: 20px;
+    margin-top: 25px;
+}
 
 
 .thanks-title {
     color: #FE3B1F;
     font-family: Rowdies;
     font-size: 96px;
+}
+.dots {
+    text-align: center;
+}
+.dots i {
+    margin-top: 270px;
+    margin-left: 10px;
+}
+.fa-solid, .fa-circle-chevron-right, .fa-circle-chevron-left {
+    font-family: 'FontAwesome';
+    font-size: 18px;
+    color: #FE3B1F;
 }

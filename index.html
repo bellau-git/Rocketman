@@ -11,171 +11,267 @@
     <title>Rocketmen</title>
 </head>
 <body>
-    <container class="main-container">
+    <div>
+    <container class="main-container" id="mainPage">
         <div class="backgr-img">
              <div class="main-cont-div">
                 <h1 class="greeting">Welcome Rocketeer !</h1>
-                <div class="greeting-btns">
-                    <button class="start-btn">Start Questionaire</button>
-                    <button class="submit-btn">See Submitted Applications</button> 
+                <div>
+                    <button class="start-btn" id="start-btn">Start Questionaire</button>
+                </div>
+                <div>
+                    <button class="submit-btn" id="submit-btn">See Submitted Applications</button>
                 </div>
             </div>
             <div class="astro">
                 <img src="./astronaut.png" alt="">
             </div>
         </div>
-       
     </container>
 
-    <container class="input-info">
+    <container class="input-info" id="about">
         <div class="input-info-left">
-            <h1 class="input-title">Hey, Rocketman, who are you?</h1>
-            <form action="">
-                <input type="text" name="" id="firstname" placeholder="First Name">
-                <input type="text" name="" id="lastname" placeholder="Last Name">
-                <input type="text" name="" id="email" placeholder="E Mail">
-                <input type="text" name="" id="mobile" placeholder="+ 995 5_ _ _ _">
-            </form>
-            <div class="next-page">
-                <button id="next" class="next-btn">Next</button>
+            <div>
+               <h1 class="input-title">Hey, Rocketman, who are you?</h1> 
+            </div>
+            <div class="form">
+                <form action="" class="input-form">
+                    <div>
+                        <input type="text" name="" id="firstname" placeholder="First Name">
+                    </div>
+                    <div>
+                        <input type="text" name="" id="lastname" placeholder="Last Name">
+                    </div>
+                    <div>
+                        <input type="text" name="" id="email" placeholder="E Mail">
+                    </div>
+                    <div>
+                        <input type="text" name="" id="mobile" placeholder="+ 995 5_ _ _ _">
+                    </div>
+                </form>
+            </div>
+            
+            <div class="dots">
+                <i class="fa-solid fa-circle-chevron-left" id="prev-dot"></i>
+                <i class="fa-solid fa-circle" id="about-dot"></i>
+                <i class="fa-solid fa-circle" id="skills-dot"></i>
+                <i class="fa-solid fa-circle" id="covid-dot"></i>
+                <i class="fa-solid fa-circle" id="dev-dot"></i>
+                <i class="fa-light fa-circle-chevron-right" id="next-dot"></i>
             </div>
         </div>
         <div class="input-info-right">
-            <h1 class="p-title">Redberry Origins</h1>
-            <p>Redberry as a company name came into life while playing “What? Where? When?” 
+            <div class="info-right">
+               <h1 class="p-title">Redberry Origins</h1>
+                <p class="p-text">Redberry as a company name came into life while playing “What? Where? When?” 
                 There was a question of which the answer was a famous American author and 
                 screenwriter Ray Bradbury, but our CEO Gaga Darsalia forgot the exact name 
                 and he said Ray Redberry. And so, this moment became the inspiration of yet 
-                to be born Company later known as Redberry 😇</p>
+                to be born Company later known as Redberry 😇</p> 
+            </div>
+            
         </div>
     </container>
 
-    <container class="input-info">
+    <container class="input-info" id="skills">
         <div class="input-info-left">
-            <h1 class="input-title">Tell us about your skills</h1>
-            <form action="">
-                <select name="skills" id="skills" class="skills">
-                    <option value=" ">Skills</option>
-                    <option value="php">PHP</option>
-                    <option value="react">React</option>
-                    <option value="c++">C++</option>
-                    <option value="java">Java</option>
-                    <option value="javascript">Javascript</option>
-                </select>
-                <input type="text" name="" id="" placeholder="Experience Duration in Years">
-                <button id="add-btn" class="add-btn">Add Programing Language</button>
-            </form>
+            <div>
+              <h1 class="input-title">Tell us about your skills</h1>  
+            </div>
+            <div class="form">
+                <form action="" class="input-form">
+                    <select name="skills" id="skills" class="skills">
+                        <option value=" ">Skills</option>
+                        <option value="php">PHP</option>
+                        <option value="react">React</option>
+                        <option value="c++">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">Javascript</option>
+                    </select>
+                    <div>
+                        <input type="text" name="" id="experience" placeholder="Experience Duration in Years">
+                    </div>
+                    <div style="float:right">
+                        <button id="add-btn" class="add-btn">Add Programing Language</button>
+                    </div>
+                </form>
+            </div>
             
+            <div class="dots">
+                <i class="fa-solid fa-circle-chevron-left" id="prev-dot"></i>
+                <i class="fa-solid fa-circle" id="about-dot"></i>
+                <i class="fa-solid fa-circle" id="skills-dot"></i>
+                <i class="fa-solid fa-circle" id="covid-dot"></i>
+                <i class="fa-solid fa-circle" id="dev-dot"></i>
+                <i class="fa-light fa-circle-chevron-right" id="next-dot"></i>
+            </div>
         </div>  
         <div class="input-info-right">
-            <h1 class="p-title">What are we capable of</h1>
-            <p>As we have told you Redberry has been on the fileds for quite a time already, 
+            <div class="info-right">
+                <h1 class="p-title">What are we capable of</h1>
+                <p class="p-text">As we have told you Redberry has been on the fileds for quite a time already, 
                     and we have touched and embraced variety of programming languages, thechnologies, 
                     philosophies and methods. We are battle-scared with PHP Laravel Stack with Vue.js, 
                     Get the hang of React along the way, embraced Serverside technologies such as Docker 
-                    and Kubernetes, and now we are leading company in Georgia in web3 industry.</p>
+                    and Kubernetes, and now we are leading company in Georgia in web3 industry.</p> 
+            </div>
         </div>
     </container>
 
-    <container class="input-info">
+    <container class="input-info" id="covid">
         <div class="input-info-left">
             <h1 class="input-title">Covid Situations</h1>
-            <form action="">
+            <form action="" class="covid-info">
                 <div>
-                    <label for="">How would you prefer to work?</label>
-                    <input type="radio" name="office" value="office">From Sairme Office 
-                    <input type="radio" name="home" value="home">From Home
-                    <input type="radio" name="hybrid" value="hybrid">Hybrid
+                    <p>How would you prefer to work?</p>
+                    <div>
+                        <input type="radio" id="office" name="office" value="office">
+                        <label for="office">From Sairme Offive</label>
+                    </div>
+                        <input type="radio" id="home" name="home" value="home">
+                        <label for="home">From Home</label>
+                    <div>
+                        <input type="radio" id="hybrid" name="hybrid" value="hybrid">
+                        <label for="hybrid">Hybrid</label>
+                    </div>
                 </div>
                 <div>
-                    <label for="">Did you have covid 19?</label>
-                    <input type="radio" name="yes" value="yes">Yes 
-                    <input type="radio" name="no" value="no">No
+                    <p>Did you have covid 19?</p>
+                    <div>
+                        <input type="radio" id="covidYes" name="yes" value="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="covidNo" name="no" value="no">
+                        <label for="no">No</label>
+                    </div>
                 </div>
                 <div>
-                    <label for="">When did you have covid 19?</label>
-                    <span>Date</span>
-                    <input type="date">
+                    <p>When did you have covid 19?</p>
+                    <div>
+                        <input type="date" id="covidDate" placeholder="Date" class="date">
+                    </div>
                 </div>
                 <div>
-                    <label for="">Have you been vaccinated?</label>
-                    <input type="radio" name="yes" value="yes">Yes 
-                    <input type="radio" name="no" value="no">No
+                    <p>Have you been vaccinated?</p>
+                    <div>
+                        <input type="radio" id="vaccYes" name="yes" value="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="vaccNo" name="no" value="no">
+                        <label for="no">No</label>
+                    </div>
                 </div>
                 <div>
-                    <label for="">When did you get covid vaccine?</label>
-                    <span>Date</span>
-                    <input type="date">
-                    <button></button>
+                    <p>When did you get covid vaccine?</p>
+                    <div>
+                        <input type="date" id="vaccDate" placeholder="Date" class="date">
+                    </div>
                 </div>
             </form>
-            <div class="next-page">
-                <button id="previous">Previous</button>
-                <button id="next">Next</button>
+            <div class="dots">
+                <i class="fa-solid fa-circle-chevron-left" id="prev-dot"></i>
+                <i class="fa-solid fa-circle" id="about-dot"></i>
+                <i class="fa-solid fa-circle" id="skills-dot"></i>
+                <i class="fa-solid fa-circle" id="covid-dot"></i>
+                <i class="fa-solid fa-circle" id="dev-dot"></i>
+                <i class="fa-light fa-circle-chevron-right" id="next-dot"></i>
             </div>
         </div>
         <div class="input-info-right">
-            <h1 class="p-title">Redberry Covid Politics</h1>
-            <p>As this infamous pandemic took place in the world, we have adjasted 
+            <div class="info-right">
+                <h1 class="p-title">Redberry Covid Politics</h1>
+                <p class="p-text">As this infamous pandemic took place in the world, we have adjasted 
                 our working practices accordingly so that our employees be as much 
                 comfortable as possible. We have hybrid working environment, meaning 
                 that you can work from home as well as from the Redberry Sairme office. 
                 But we would love you to see in the office because we belive that face to 
                 face communications are much more fun and productive than zoom meetings. </p>
+            </div>
         </div>
     </container>
 
-    <container class="input-info">
+    <container class="input-info" id="devtalks">
         <div class="input-info-left">
-            <h1 class="input-title">What about you?</h1>
-            <form action="">
-                <div>
-                    <label for="">Would you attend Devtalks and maybe also organize your own?</label>
-                    <input type="radio" name="yes" value="yes">Yes 
-                    <input type="radio" name="no" value="no">No
-                </div>
-                <div>
-                    <label for="">What would you speak about at Devtalk?</label>
-                    <textarea name="aboutYou" id="about-you" cols="30" rows="10">I would...</textarea>
-                </div>
-                <div>
-                    <label for="">Tell us somthing special</label>
-                    <textarea name="smthSpecial" id="smth-special" cols="30" rows="10">I...</textarea>
-                </div>
-                <div class="next-page">
-                    <button id="previous">Previous</button>
-                    <button id="next">Next</button>
-                </div>
-            </form>
+            <div>
+               <h1 class="input-title">What about you?</h1> 
+            </div>
+            <div>
+                <form action="" class="covid-info">
+                    <div>
+                        <p>Would you attend Devtalks and maybe also organize your own?</p>
+                        <div>
+                            <input type="radio" id="devtalksYes" name="yes" value="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="devtalksNo" name="no" value="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>What would you speak about at Devtalk?</p>
+                        <div>
+                            <textarea name="aboutYou" id="devtalksText" cols="30" rows="10">I would...</textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Tell us somthing special</p>
+                        <div>
+                            <textarea name="aboutYou" id="about-you" cols="30" rows="10">I...</textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="dots">
+                <i class="fa-solid fa-circle-chevron-left" id="prev-dot"></i>
+                <i class="fa-solid fa-circle" id="about-dot"></i>
+                <i class="fa-solid fa-circle" id="skills-dot"></i>
+                <i class="fa-solid fa-circle" id="covid-dot"></i>
+                <i class="fa-solid fa-circle" id="dev-dot"></i>
+                <i class="fa-light fa-circle-chevron-right" id="next-dot"></i>
+            </div>
         </div>
         <div class="input-info-right">
-            <h1 class="p-title">Redberrian Insights</h1>
-            <p>We were soo much fun before the pandemic started, with almost every weekend parties and each 
+            <div class="info-right">
+                <h1 class="p-title">Redberrian Insights</h1>
+                <p class="p-text">We were soo much fun before the pandemic started, with almost every weekend parties and each 
                 employee birthday celebrations. But covid situation got the best of us. But yet we are trying 
                 to take and give as much fun as possibly. For example in every 2 weeks we are attending Devtalks 
                 in which our senior and lead developers talks about interesting stuff, for example Web3, NFT, 
                 what’s new in Laravel 9 and so on. This kind of devtalks are attended in Office but also broadcasted 
                  through Zoom meetings. So you are feel free to join in any way possible. Join Us!</p>
+            </div>
         </div>
     </container>
 
-    <container class="main-container">
+    <container class="main-container" id="lastSubmit">
         <div class="main-cont-div">
-            <button id="last-submit" class="last-submit-btn">Sutmit</button>
-            <button id="go-back" class="go-back-btn">go back</button>
+            <div class="last-submit"> 
+                <div>
+                <button id="last-submit" class="last-submit-btn">Sutmit</button>
+            </div>
+            <div>
+                <button id="go-back" class="go-back-btn">go back</button>
+            </div>
+            </div>
         </div>
     </container>
 
-    <container class="main-container">
+    <container class="main-container" id="thanks">
         <div class="main-cont-div">
             <h1 class="thanks-title">Thanks for Joining 😊 </h1>
         </div>
     </container>
 
-    <container class="subm-item">
+    <container class="subm-item" id="submitLetter">
         <h1>Submitted Applications</h1>
     </container>
+    </div>
      
+    <script src="https://kit.fontawesome.com/7923fb4d6a.js" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 
 </body>
