@@ -1,46 +1,82 @@
 body {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    background: black;
 }
 container {
-    height: 1080px;
-    overflow: auto;
-    text-align: center;
+    overflow: hidden;
+    display: block;
 }
 button {
     cursor: pointer;
     box-shadow: none;
 }
 textarea {
+    width: 535px;
+    height: 90px;
     resize: none;
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
   }
 .main-container {
-    width: 100%;
-    display: block;
     background-color: black;
 }
 .backgr-img {
     background: url(stars.png);
+    background-size: contain;
+    text-align: center;
+}
+.astro {
+    overflow: hidden;
 }
 img {
+    padding-top: 50px;
     width: 450px;
     height: 400px;
     transform: rotate(-32.28deg);
 }
 .main-cont-div {
     padding-top: 115px;
+    text-align: center;
+}
+.greeting-btns {
+    width: 450px;
 }
 .input-info {
     display: flex;
     justify-content: space-around;
 }
+.input-form input, .skills-option, .date {
+    width: 455px;
+    height: 50px;
+    margin-top: 20px;
+}
 .input-info-left, .input-info-right {
-    display: none;
-    padding-left: 180px;
-    padding-top: 100px;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    width: 100%; 
+}
+.input-info-left {
+    background: white;
+}
+.m-b-70 {
+    margin-bottom: 70px;
+}
+.skills-option {
+    -moz-appearance: none;
+    width: 510px;
+    contain: "\f107";
+    font-family: "Font Awesome 5 Free";
+}
+.form {
+    text-align: center;
 }
 .input-info-right {
     background-color: black;
@@ -48,6 +84,7 @@ img {
 .greeting {
     height: 212px;
     color: #FE3B1F;
+    text-align: center;
 
     font-family: Rowdies;
     font-size: 96px;
@@ -69,6 +106,7 @@ img {
     font-family: Montserrat;
     font-size: 24px;
     line-height: 29px;
+    padding-top: 50px;
     text-decoration-line: underline;
     background: none;
     border-style: none;
@@ -77,14 +115,10 @@ img {
 button:hover {
     transition: 0.7s;
 }
-p {
-    width: 705px;
-    height: 606px;
-    font-size: 24px;
-    color: #FFFFFF;
-    line-height: 200%;
-    letter-spacing: 0.05em;
+
+.info-right {
     text-align: left;
+    padding-left: 160px;
 }
 .p-title {
     color: #FE3B1F;
@@ -92,8 +126,14 @@ p {
     height: 94px;
     font-size: 64px;
     line-height: 79px;
-    text-align: left;
-    width: 700px auto;
+}
+.p-text {
+    color: #FFFFFF;
+    width: 705px;
+    height: 606px;
+    font-size: 24px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
 }
 .input-title {
     color: #FE3B1F;
@@ -101,42 +141,170 @@ p {
     font-size: 64px;
     line-height: 79px;
     width: 700px;
+    padding-left: 160px;
+    text-align: center;
 }
-
-
-form > input, select {
-    display: inline-grid;
-    width: 455px;
-    height: 54px;
+.info > input {
+    width: 454px;
+    height: 55px;
+    margin-top: 30px;
+}
+input, select {
     font-style: italic;
     font-size: 14px;
     background: #FFFFFF;
     border: 1px solid #525557;
-    margin-top: 37px;
-    
     padding-left: 50px;
 }
-
 select {
     width: 508px;
+    margin-top: 37px;
+    line-height: 50px;
+}
+
+.addbtn{
+    padding-left: 290px;
 }
 .add-btn {
     font-family: Montserrat;
     background-color: #FE3B1F;
     color: #FFFFFF;
-    width: 195px;
+    width: 220px;
     height: 30px;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     margin-top: 20px;
+    border-style: none;
 }
-
-
-
-
-
-.thanks-title {
+.skill-flex {
+    display: flex;
+    justify-content: center;
+}
+.skill-box {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    border: solid black 1px;
+    width: 510px;
+    height: 50px;
+    margin-top: 60px;
+}
+.covid-info {
+    display: flex;
+    flex-direction: column;
+}
+.p-l-160 {
+    padding-left: 160px;
+}
+.f-s-16 {
+    font-size: 16px;
+}
+.covid-info > label{
+    height: 52px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.covid-info > div {
+    line-height: 20px;
+    margin-top: 25px;
+}
+.mt-200 {
+    margin-top: 220px;
+}
+.tnks-page {
+    padding-top: 115px;
+    text-align: center;
+}
+.tnks-title {
     color: #FE3B1F;
     font-family: Rowdies;
     font-size: 96px;
+    margin-top: 150px;
+}
+.dots {
+    text-align: center;
+}
+.dots i {
+    margin-top: 150px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+.fa-solid, .fa-circle-chevron-right, .fa-circle-chevron-left, .fa-circle-minus, .fa-chevron-down {
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    color: #FE3B1F;
+}
+
+.opacity20 {
+    opacity: 0.2;
+}
+
+.subm-ltr {
+    width: 1154px;
+    text-align: left;
+    padding-left: 95px;
+    
+}
+.subm-title {
+    color: white;
+    font-family: 'Rowdies';
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 70px;
+    letter-spacing: 0.11em;
+    margin-top: 95px;
+}
+.opn-panel {
+    width: 1300px;
+    height: 52px;
+    background-color: #FE3B1F;
+    cursor: pointer;
+}
+.open-panel:hover {
+    border-color: white 1px;
+    transition: 0.7s;
+}
+.app-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    background-color: white;
+}
+.app-form > div {
+    padding-left: 70px;
+    padding-top: 50px;
+    width: 40%;
+}
+h2 {
+    font-size: 20px;
+    font-style: italic;
+    color: #FE3B1F;
+    text-decoration-line: underline;
+}
+tbody {
+    display: flex;
+    width: max-content;
+}
+tr {
+    display: flex;
+    flex-direction: column;
+}
+tr, th {
+    color: black;
+    font-family: Montserrat;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 45px;
+}
+th {
+    padding-right: 70px;
+}
+#mainPage, #thanks, #lastSubmit {
+    flex-direction: column;
+}
+.fa-circle-chevron-left, .fa-circle-chevron-right {
+    cursor: pointer;
+}
+#about, #skills-id, #covid, #devtalks, #lastSubmit, #thanks, #submitLetter, #subm-app{
+    display: none;
 }
