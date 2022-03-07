@@ -187,7 +187,7 @@ select {
     border: solid black 1px;
     width: 510px;
     height: 50px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 .covid-info {
     display: flex;
@@ -307,4 +307,8 @@ th {
 }
 #about, #skills-id, #covid, #devtalks, #lastSubmit, #thanks, #submitLetter, #subm-app{
     display: none;
+}
+
+#skillList {
+    padding-left: 170px;
 }

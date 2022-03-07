@@ -84,28 +84,17 @@
             <div class="form">
                 <form action="" class="input-form">
                     <select name="skills" id="skills" class="skills-option">
-                        <option value="">Skills
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </option>
-                        <option value="php">PHP</option>
-                        <option value="react">React</option>
-                        <option value="c++">C++</option>
-                        <option value="java">Java</option>
-                        <option value="javascript">Javascript</option>
+                        <option value="">Skills  <i class="fa-solid fa-chevron-down"></i></option>
                     </select>
 
                     <div>
                         <input type="text" name="" id="experience" placeholder="Experience Duration in Years">
                     </div>
                     <div class="addbtn">
-                        <button id="add-btn" class="add-btn">Add Programing Language</button>
+                        <button type="button" id="add-btn" class="add-btn" onclick="addSkill()">Add Programing Language</button>
                     </div>
-                    <div class="skill-flex">
-                        <span class="skill-box">
-                            <p>PHP</p>
-                            <p>Years of Experience: 3</p>
-                            <i class="fa-solid fa-circle-minus"></i>
-                        </span>
+                    <div id="skillList">
+                        
                     </div>
                 </form>
             </div>
@@ -139,7 +128,7 @@
                     <p>How would you prefer to work?</p>
                     <div>
                         <input type="radio" id="office" name="office" value="office">
-                        <label for="office">From Sairme Offive</label>
+                        <label for="office">From Sairme Office</label>
                     </div>
                     <input type="radio" id="home" name="home" value="home">
                     <label for="home">From Home</label>
@@ -266,7 +255,7 @@
             <div class="mt-200">
                 <div class="last-submit">
                     <div>
-                        <button id="last-submit" class="last-submit-btn" onclick="nextPage()">Submit</button>
+                        <button id="last-submit" class="last-submit-btn" onclick="submitForm()">Submit</button>
                     </div>
                 </div>
                 <div>
