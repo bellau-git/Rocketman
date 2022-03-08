@@ -12,6 +12,18 @@ container {
 button {
     cursor: pointer;
     box-shadow: none;
+}   
+button:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+}
+
+input:invalid {
+    border-color: red;
+    border-width: 2px;
+}
+
+button:active {
+    transform: translateY(4px);
 }
 textarea {
     width: 535px;
@@ -41,6 +53,8 @@ img {
     height: 400px;
     transform: rotate(-32.28deg);
 }
+
+
 .main-cont-div {
     padding-top: 115px;
     text-align: center;
@@ -112,10 +126,6 @@ img {
     border-style: none;
     color: #FFFFFF;
 }
-button:hover {
-    transition: 0.7s;
-}
-
 .info-right {
     text-align: left;
     padding-left: 160px;
@@ -170,10 +180,11 @@ select {
     background-color: #FE3B1F;
     color: #FFFFFF;
     width: 220px;
-    height: 30px;
+    height: 35px;
     font-size: 15px;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 60px;
     border-style: none;
 }
 .skill-flex {
@@ -187,7 +198,23 @@ select {
     border: solid black 1px;
     width: 510px;
     height: 50px;
-    margin-top: 20px;
+}
+.arrow-down {
+    position: absolute;
+    line-height: 6;
+    margin-left: 203px;
+    pointer-events: none;
+}
+.fa-angle-down {
+    content: "\f107";
+    cursor: pointer;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    cursor: pointer;
+}
+.remove-btn {
+    line-height: 4;
+    padding-left: 150px;
 }
 .covid-info {
     display: flex;

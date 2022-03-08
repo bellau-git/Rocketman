@@ -40,16 +40,16 @@
             <div class="form">
                 <form action="" class="input-form">
                     <div>
-                        <input type="text" name="" id="firstname" placeholder="First Name">
+                        <input type="text" name="" id="firstname" required pattern="[A-Za-z]{2,}" placeholder="First Name">
                     </div>
                     <div>
-                        <input type="text" name="" id="lastname" placeholder="Last Name">
+                        <input type="text" name="" id="lastname" required pattern="[A-Za-z]{2,}" placeholder="Last Name">
                     </div>
                     <div>
-                        <input type="text" name="" id="email" placeholder="E Mail">
+                        <input type="text" name="" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E Mail">
                     </div>
                     <div>
-                        <input type="text" name="" id="mobile" placeholder="+ 995 5_ _ _ _">
+                        <input type="text" name="" id="mobile" required pattern="^\+9955\d\d\d\d\d\d\d\d$" placeholder="+9955________">
                     </div>
                 </form>
             </div>
@@ -82,13 +82,15 @@
                 <h1 class="input-title">Tell us about your skills</h1>
             </div>
             <div class="form">
+                <span class="arrow-down"><i class="fa-solid fa-angle-down"></i></span>
                 <form action="" class="input-form">
                     <select name="skills" id="skills" class="skills-option">
-                        <option value="">Skills  <i class="fa-solid fa-chevron-down"></i></option>
+                        <option value="">Skills</option>
                     </select>
+                    
 
                     <div>
-                        <input type="text" name="" id="experience" placeholder="Experience Duration in Years">
+                        <input type="text" name="" id="experience" pattern="[1-9][0-9]?"  placeholder="Experience Duration in Years">
                     </div>
                     <div class="addbtn">
                         <button type="button" id="add-btn" class="add-btn" onclick="addSkill()">Add Programing Language</button>
@@ -127,48 +129,48 @@
                 <div>
                     <p>How would you prefer to work?</p>
                     <div>
-                        <input type="radio" id="office" name="office" value="office">
-                        <label for="office">From Sairme Office</label>
+                        <input type="radio" id="prefered_work_from_office" name="prefered_work" checked value="from_office">
+                        <label for="prefered_work_from_office">From Sairme Office</label>
                     </div>
-                    <input type="radio" id="home" name="home" value="home">
-                    <label for="home">From Home</label>
+                    <input type="radio" id="prefered_work_from_home" name="prefered_work" value="from_home">
+                    <label for="prefered_work_from_home">From Home</label>
                     <div>
-                        <input type="radio" id="hybrid" name="hybrid" value="hybrid">
-                        <label for="hybrid">Hybrid</label>
+                        <input type="radio" id="prefered_work_hybrid" name="prefered_work" value="hybrid">
+                        <label for="prefered_work_from_home">Hybrid</label>
                     </div>
                 </div>
                 <div>
                     <p>Did you have covid 19?</p>
                     <div>
-                        <input type="radio" id="covidYes" name="yes" value="yes">
-                        <label for="yes">Yes</label>
+                        <input type="radio" id="hadcovid_true" checked name="hadcovid" value="true">
+                        <label for="hadcovid_true">Yes</label>
                     </div>
                     <div>
-                        <input type="radio" id="covidNo" name="no" value="no">
-                        <label for="no">No</label>
+                        <input type="radio" id="hadcovid_false" name="hadcovid" value="false">
+                        <label for="hadcovid_false">No</label>
                     </div>
                 </div>
                 <div>
                     <p>When did you have covid 19?</p>
                     <div>
-                        <input type="date" id="covidDate" placeholder="Date" class="date">
+                        <input type="date" id="covidDate" placeholder="Date" value="2022-01-01" class="date">
                     </div>
                 </div>
                 <div>
                     <p>Have you been vaccinated?</p>
                     <div>
-                        <input type="radio" id="vaccYes" name="yes" value="yes">
-                        <label for="yes">Yes</label>
+                        <input type="radio" id="hadvacc_true" checked name="hadvacc" value="true">
+                        <label for="hadvacc_true">Yes</label>
                     </div>
                     <div>
-                        <input type="radio" id="vaccNo" name="no" value="no">
-                        <label for="no">No</label>
+                        <input type="radio" id="hadvacc_false" name="hadvacc" value="false">
+                        <label for="hadvacc_false">No</label>
                     </div>
                 </div>
                 <div>
                     <p>When did you get covid vaccine?</p>
                     <div>
-                        <input type="date" id="vaccDate" placeholder="Date" class="date">
+                        <input type="date" id="vaccDate" placeholder="Date" value="2022-01-01" class="date">
                     </div>
                 </div>
             </form>
@@ -204,24 +206,24 @@
                     <div>
                         <p>Would you attend Devtalks and maybe also organize your own?</p>
                         <div>
-                            <input type="radio" id="devtalksYes" name="yes" value="yes">
-                            <label for="yes">Yes</label>
+                            <input type="radio" id="devtalks_radio_true" name="devtalks_radio" value="true">
+                            <label for="devtalks_radio_true">Yes</label>
                         </div>
                         <div>
-                            <input type="radio" id="devtalksNo" name="no" value="no">
-                            <label for="no">No</label>
+                            <input type="radio" id="devtalks_radio_false" name="devtalks_radio" value="false">
+                            <label for="devtalks_radio_false">No</label>
                         </div>
                     </div>
                     <div>
                         <p>What would you speak about at Devtalk?</p>
                         <div>
-                            <textarea name="aboutYou" id="devtalksText" cols="30" rows="10">I would...</textarea>
+                            <textarea name="aboutDevtalk" id="devtalksText" cols="30" rows="10">I would...</textarea>
                         </div>
                     </div>
                     <div>
                         <p>Tell us somthing special</p>
                         <div>
-                            <textarea name="aboutYou" id="about-you" cols="30" rows="10">I...</textarea>
+                            <textarea name="aboutYou" id="aboutYouText" cols="30" rows="10">I...</textarea>
                         </div>
                     </div>
                 </form>
@@ -273,129 +275,12 @@
 
     <container class="main-container" id="subm-app">
         <div class="subm-ltr" id="subm-ltr">
-            <div class="subm-title">
-                <h1>Submitted Applications</h1>
-            </div>
-            <div class="opn-panel">
+            
 
-            </div>
-            <div class="app-form">
-                <div class="pers-info">
-                    <h2>Personal Information</h2>
-                    <table>
-                        <tr>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>E mail</th>
-                            <th>Phone</th>
-                        </tr>
-                        <tr>
-                            <th id="fname">nnnn</th>
-                            <th id="lname">nnnn</th>
-                            <th id="mail">nnnn</th>
-                            <th id="tel">nnnn</th>
-                        </tr>
-                    </table>
-                </div>
-                <div class="skillset">
-                    <h2>Skillset</h2>
-                    <table>
-                        <tr>
-                            <th id="php">php</th>
-                            <th id="react">react</th>
-                            <th id="javascript">javascript</th>
-                        </tr>
-                        <tr>
-                            <th id="oneyear">Years of Experience: 1</th>
-                            <th id="twoyear">Years of Experience: 2</th>
-                            <th id="treeyear">Years of Experience: 3</th>
-                        </tr>
-                    </table>
-                </div>
-                <div class="covid-sit">
-                    <h2>Covid Situation</h2>
-                    <form action="" class="covid-info f-s-16">
-                        <div>
-                            <p>How would you prefer to work?</p>
-                            <div>
-                                <input type="radio" id="office" name="office" value="office" checked>
-                                <label for="office">From Sairme Offive</label>
-                            </div>
-                            <input type="radio" id="home" name="home" value="home">
-                            <label for="home">From Home</label>
-                            <div>
-                                <input type="radio" id="hybrid" name="hybrid" value="hybrid">
-                                <label for="hybrid">Hybrid</label>
-                            </div>
-                        </div>
-                        <div>
-                            <p>Did you have covid 19?</p>
-                            <div>
-                                <input type="radio" id="covidYes" name="yes" value="yes" checked>
-                                <label for="yes">Yes</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="covidNo" name="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div>
-                            <p>When did you have covid 19?</p>
-                            <div>
-                                <input type="date" id="covidDate" placeholder="Date" class="date">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Have you been vaccinated?</p>
-                            <div>
-                                <input type="radio" id="vaccYes" name="yes" value="yes" checked>
-                                <label for="yes">Yes</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="vaccNo" name="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div>
-                            <p>When did you get covid vaccine?</p>
-                            <div>
-                                <input type="date" id="vaccDate" placeholder="222222222" class="date m-b-70">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="insights">
-                    <h2>Insights</h2>
-                    <form action="" class="covid-info f-s-16">
-                        <div>
-                            <p>Would you attend Devtalks and maybe also organize your own?</p>
-                            <div>
-                                <input type="radio" id="devtalksYes" name="yes" value="yes" checked>
-                                <label for="yes">Yes</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="devtalksNo" name="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div>
-                            <p>What would you speak about at Devtalk?</p>
-                            <div>
-                                <textarea name="aboutYou" id="devtalksText" cols="30"
-                                    rows="10">I would speak about subject of how to center a div</textarea>
-                            </div>
-                        </div>
-                        <div>
-                            <p>Tell us somthing special</p>
-                            <div>
-                                <textarea name="aboutYou" id="about-you" cols="30"
-                                    rows="10">I can deBUG anything!</textarea>
-                            </div>
-                        </div>
-                    </form>
-                </div>
 
-            </div>
+
+
+
         </div>
     </container>
 
